@@ -1,10 +1,8 @@
 public class LongestSubstring {
   public static int lengthOfLongestSubstring(String s) {
     int n = s.length();
-    if (n == 0)
-      return 0;
-    if (n == 1)
-      return 1;
+    if (n < 2)
+      return n;
     int max = 0;
     int[] map = new int[128];
     int start = 0;
